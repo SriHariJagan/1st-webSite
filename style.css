@@ -20,13 +20,6 @@
     justify-content: space-between;
     align-items: center;
   }
-  a.site-logo {
-    font-size: 26px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
-  }
   .site-navbar ul {
     margin: 0;
     padding: 0;
@@ -49,20 +42,22 @@
   
   
   /* nav-toggler css start */
+
   .nav-toggler {
-    border: 3px solid #fff;
+    /* border: 1px solid #c4c1c1; */
     padding: 5px;
     background-color: transparent;
     cursor: pointer;
     height: 39px;
     display: none;
+    border-radius: 5px;
   }
   .nav-toggler span, 
   .nav-toggler span:before, 
   .nav-toggler span:after {
     width: 28px;
     height: 3px;
-    background-color: #fff;
+    background-color: #948f8f;
     display: block;
     transition: .3s;
   }
@@ -100,13 +95,13 @@
     .site-navbar ul {
       position: absolute;
       width: 100%;
-      height: calc(100vh - 60px);
+      /* height: calc(100vh - 60px); */
       left: 0;
       top: 60px;
       flex-direction: column;
       align-items: center;
       border-top: 1px solid #444;
-      background-color: rgba(0,0,0,.75);
+      background-color: rgba(0, 0, 0, 0.822);
       z-index: 55;
       max-height: 0;
       overflow: hidden;
@@ -114,7 +109,8 @@
     }
     .site-navbar ul li {
       width: 100%;
-      text-align: center;
+      text-align: right;
+      font-size: 1.5rem;
     }
     .site-navbar ul li a {
       padding: 25px;
@@ -265,7 +261,7 @@
 }
 
 .page1-heading{
-    margin: 100px auto 50px ;
+    margin: 50px auto;
     width: 75%;
     text-align: center;
 }
@@ -329,14 +325,13 @@
     width: 100%;
     min-height: 130vh;
     background-color: #ECF4FE;
-    padding-bottom: 40px;
 }
 
 .page2-heading{
+    padding: 40px 0;
     margin: auto;
     width: 75%;
     text-align: center;
-    padding: 80px 0 40px 0;
     font-size: 3rem;
     font-family: sans-serif;
 }
@@ -854,7 +849,6 @@
 /*------------------------ page5 -------------------------- */
 
 .page5{
-    min-height: 45vh;
     background-color: #072cffb9;
     margin-bottom: 50px;
 }
