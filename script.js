@@ -6,32 +6,42 @@ function scrollSlider(direction) {
         behavior: 'smooth'
     });
 }
+// Define all UI variables
+const navToggler = document.querySelector('.nav-toggler');
+const navMenu = document.querySelector('.site-navbar ul');
+const navLinks = document.querySelectorAll('.site-navbar a');
 
-    // define all UI variable
-    const navToggler = document.querySelector('.nav-toggler');
-    const navMenu = document.querySelector('.site-navbar ul');
-    const navLinks = document.querySelectorAll('.site-navbar a');
-    
-    // load all event listners
-    allEventListners();
-    
-    // functions of all event listners
-    function allEventListners() {
-      // toggler icon click event
-      navToggler.addEventListener('click', togglerClick);
-      // nav links click event
-      navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
-    }
-    
-    // togglerClick function
-    function togglerClick() {
-      navToggler.classList.toggle('toggler-open');
-      navMenu.classList.toggle('open');
-    }
-    
-    // navLinkClick function
-    function navLinkClick() {
-      if(navMenu.classList.contains('open')) {
-        navToggler.click();
-      }
-    }
+// Load all event listeners
+allEventListeners();
+
+// Functions for all event listeners
+function allEventListeners() {
+  // Toggler icon click event
+  navToggler.addEventListener('click', togglerClick);
+  // Nav links click event
+  navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
+  // Click anywhere on the document to close the menu
+  document.addEventListener('click', closeMenu);
+}
+
+// TogglerClick function
+function togglerClick() {
+  navToggler.classList.toggle('toggler-open');
+  navMenu.classList.toggle('open');
+}
+
+// NavLinkClick function
+function navLinkClick() {
+  if (navMenu.classList.contains('open')) {
+    navToggler.click();
+  }
+}
+
+// Close menu function
+function closeMenu(event) {
+  if (!event.target.closest('.site-navbar')) {
+    // Clicked outside the nav menu, so close it
+    navToggler.classList.remove('toggler-open');
+    navMenu.classList.remove('open');
+  }
+}
