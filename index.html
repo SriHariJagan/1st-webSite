@@ -1,343 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Site</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
 
 
-   <header>
-        
-    <div class="navlinks">
-        <div class="nav-container">
-            <nav class="site-navbar">
-                <!-- site logo -->
-                <a href="#home">
-                    <img src="https://consulting.vamtam.com/wp-content/uploads/2017/09/Log%D0%BE-White.svg" alt="icon">
-                </a>
-        
-                <!-- site menu/nav -->
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#service">Services</a>
-                    </li>
-                    <li>
-                        <a href="#casestudies">Case Studies</a>
-                    </li>
-                    <li>
-                        <a href="#insights">Insights</a>
-                    </li>
-                    <li>
-                        <a href="#pages">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contacts</a>
-                    </li>
-                </ul>
-        
-                <!-- nav-toggler for mobile version only -->
-                <button class="nav-toggler">
-                <span></span>
+        <header>
+
+            <div class="navlinks">
+                <div class="nav-container">
+                    <nav class="site-navbar">
+                        <!-- site logo -->
+                        <a href="#home">
+                            <img src="https://consulting.vamtam.com/wp-content/uploads/2017/09/Log%D0%BE-White.svg"
+                                alt="icon">
+                        </a>
+
+                        <!-- site menu/nav -->
+                        <ul>
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#service">Services</a>
+                            </li>
+                            <li>
+                                <a href="#casestudies">Case Studies</a>
+                            </li>
+                            <li>
+                                <a href="#insights">Insights</a>
+                            </li>
+                            <li>
+                                <a href="#pages">Pages</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contacts</a>
+                            </li>
+                        </ul>
+
+                        <!-- nav-toggler for mobile version only -->
+                        <button class="nav-toggler">
+                            <span></span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active item1" data-bs-interval="8000">
+                        <div class="content">
+                            <span class="content-heading">The Fastest Way to achieve the Success</span>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim tempora cum, soluta aut
+                                delectus quod vel.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item item2" data-bs-interval="8000">
+                        <div class="content">
+                            <span class="content-heading">
+                                Together
+                                <h3>We are sharping the future</h3>
+                            </span>
+                            <ul class="content-list">
+                                <li>Strategy and Planning</li>
+                                <li>Finance and Restructing</li>
+                                <li>Audit and Evaluation</li>
+                                <li>Taxes and Efficiency</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item item3" data-bs-interval="8000">
+                        <div class="content-right">
+                            <span class="content-heading">Keep up to Date</span>
+                            <p class="text-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
+                                nihil corporis debitis.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-            </nav>
-        </div>
-    </div>
-
-
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active item1" data-bs-interval="8000">
-                <div class="content">
-                    <span class="content-heading">The Fastest Way to achieve the Success</span>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim tempora cum, soluta aut delectus quod vel.</p>
-                </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-item item2" data-bs-interval="8000">
-                <div class="content">
-                    <span class="content-heading">
-                        Together
-                        <h3>We are sharping the future</h3>
-                    </span>
-                    <ul class="content-list">
-                        <li>Strategy and Planning</li>
-                        <li>Finance and Restructing</li>
-                        <li>Audit and Evaluation</li>
-                        <li>Taxes and Efficiency</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="carousel-item item3" data-bs-interval="8000">
-                <div class="content-right">
-                    <span class="content-heading">Keep up to Date</span>
-                    <p class="text-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt nihil corporis debitis.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-   </header>
+        </header>
 
-    <main>
-        <div class="page1" id="about">
-           <div class="page1-heading">
-                <span>
-                    We bring the right people together to challenge established thinking and drive transformation.
-                </span>
-           </div>
-
-           <div class="page1-container">
-
-                <div class="page1-box">
-                    <span class="page1-box-icon">
-                        <i class="fa-regular fa-lightbulb"></i>
-                    </span>
-                    <span class="page1-box-heading">We Innovate</span>
-                    <span class="page1-box-text">
-                        We innovate systematically, continuously and successfully.
+        <main>
+            <div class="page1" id="about">
+                <div class="page1-heading">
+                    <span>
+                        We bring the right people together to challenge established thinking and drive transformation.
                     </span>
                 </div>
 
-                <div class="page1-box">
-                    <span class="page1-box-icon">
-                        <i class="fa-regular fa-lightbulb"></i>
-                    </span>
-                    <span class="page1-box-heading">We Innovate</span>
-                    <span class="page1-box-text">
-                        We innovate systematically, continuously and successfully.
-                    </span>
-                </div>
+                <div class="page1-container">
 
-                <div class="page1-box">
-                    <span class="page1-box-icon">
-                        <i class="fa-regular fa-lightbulb"></i>
-                    </span>
-                    <span class="page1-box-heading">We Innovate</span>
-                    <span class="page1-box-text">
-                        We innovate systematically, continuously and successfully.
-                    </span>
-                </div>
-
-           </div>
-        </div>
-
-        <!-- page2 -->
-
-        <div class="page2" id="service">
-            <div class="page2-heading">
-                <span>
-                    Industries
-                </span>
-            </div>
-    
-            <div class="page2-container">
-
-                <!-- item-1 -->
-
-                <div class="page2-container-item">
-                    <div class="page2-box">
-                        <div>
-                            <i class="fas fa-chalkboard-user icon"></i>
-                        </div>
-                        <span class="box-content">
-                            <span class="page2-boxHeading">Strategy & Planning</span>
-                            <p>
-                                A business strategy is the means by which it sets out to 
-                                achieve its desired ends.
-                            </p>
+                    <div class="page1-box">
+                        <span class="page1-box-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </span>
+                        <span class="page1-box-heading">We Innovate</span>
+                        <span class="page1-box-text">
+                            We innovate systematically, continuously and successfully.
                         </span>
                     </div>
-        
-                    <div class="page2-box">
-                        <div>
-                            <i class="fas fa-chalkboard-user icon"></i>
-                        </div>
-                        <span class="box-content">
-                            <span class="page2-boxHeading">	
-                                Finance & Restructuring
-                            </span>
-                            <p>
-                                Restructuring your company could restore its viability and improve its liquidity position.
-                            </p>
+
+                    <div class="page1-box">
+                        <span class="page1-box-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </span>
+                        <span class="page1-box-heading">We Innovate</span>
+                        <span class="page1-box-text">
+                            We innovate systematically, continuously and successfully.
                         </span>
                     </div>
-        
-        
-                    <div class="page2-box">
-                        <div>
-                            <i class="fas fa-chalkboard-user icon"></i>
-                        </div>
-                        <span class="box-content">
-                            <span class="page2-boxHeading">	
-                                Estate Planning
-                            </span>
-                            <p>
-                                Restructuring your company could restore its viability and improve its liquidity position.
-                            </p>
+
+                    <div class="page1-box">
+                        <span class="page1-box-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </span>
+                        <span class="page1-box-heading">We Innovate</span>
+                        <span class="page1-box-text">
+                            We innovate systematically, continuously and successfully.
                         </span>
                     </div>
-                    
-                </div>
 
-                <hr>
-
-                <!-- item-2 -->
-
-                <div class="page2-container-item">
-                    <div class="page2-box">
-                        <div>
-                            <i class="fas fa-chalkboard-user icon"></i>
-                        </div>
-                        <span class="box-content">
-                            <span class="page2-boxHeading">	
-                                Audit & Evaluation
-                            </span>
-                            <p>
-                                If you have been selected for a business audit, here is what you need to know.
-                            </p>
-                        </span>
-                    </div>
-        
-                    <div class="page2-box">
-                        <div>
-                            <i class="fas fa-chalkboard-user icon"></i>
-                        </div>
-                        <span class="box-content">
-                            <span class="page2-boxHeading">	               	
-                                Taxes & Efficiency
-                            </span>
-                            <p>
-                                Company income subject to tax is often determined much like taxable income for individual taxpayers.
-                            </p>
-                        </span>
-                    </div>
-        
-        
-                    <div class="page2-box">
-                        <div>
-                            <i class="fas fa-chalkboard-user icon"></i>
-                        </div>
-                        <span class="box-content">
-                            <span class="page2-boxHeading">	
-                                Consumer Markets
-                            </span>
-                            <p>
-                                A business strategy is the means by which it sets out to achieve its desired ends.
-                            </p>
-                        </span>
-                    </div>
-                    
-                </div>
-
-                <hr>
-
-                <!-- item-3 -->
-
-                <div class="page2-container-item">
-                    <div class="page2-box">
-                        <div>
-                            <i class="fas fa-chalkboard-user icon"></i>
-                        </div>
-                        <span class="box-content">
-                            <span class="page2-boxHeading">	
-                                Insurance
-                            </span>
-                            <p>
-                                A business strategy is the means by which it sets out to achieve its desired ends.
-                            </p>
-                        </span>
-                    </div>
-        
-                    <div class="page2-box">
-                        <div>
-                            <i class="fas fa-chalkboard-user icon"></i>
-                        </div>
-                        <span class="box-content">
-                            <span class="page2-boxHeading">	
-                                Communications
-                            </span>
-                            <p>
-                                A business strategy is the means by which it sets out to achieve its desired ends.         
-                            </p>
-                        </span>
-                    </div>
-        
-        
-                    <div class="page2-box">
-                        <div>
-                            <i class="fas fa-chalkboard-user icon"></i>
-                        </div>
-                        <span class="box-content">
-                            <span class="page2-boxHeading">		
-                                Financial Services
-                            </span>
-                            <p>
-                                A business strategy is the means by which it sets out to achieve its desired ends.
-                            </p>
-                        </span>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-
-        <!-- page-3 -->
-
-        <div class="page3" id="casestudies">
-
-            <div class="page3-container1">
-                <div class="page3-conainer1-box">
-                    <span class="page3-container1-box-icon">
-                        <i class="fa-regular fa-lightbulb"></i>
-                    </span>
-                    <span class="page3-container1-box-heading">Why choose us?</span>
-                    <span class="page3-container1-box-text">
-                        We innovate systematically, continuously and successfully.
-                    </span>
                 </div>
             </div>
 
+            <!-- page2 -->
 
-            <div class="page3-container2">
+            <div class="page2" id="service">
+                <div class="page2-heading">
+                    <span>
+                        Industries
+                    </span>
+                </div>
 
-                <!-- 1st Item -->
+                <div class="page2-container">
 
-                <div class="page3-conainer2-box">
+                    <!-- item-1 -->
 
-                    <div class="page3-container2-sno">01.</div>
-                    <div class="page3-container2-box-heading">
-                        <h1>Let the numbers speak!</h1>
-                        <p>With enough data, the numbers speak for themselves.</p>
-                    </div>
-
-                    <div class="page3-container2-content">
+                    <div class="page2-container-item">
                         <div class="page2-box">
                             <div>
                                 <i class="fas fa-chalkboard-user icon"></i>
                             </div>
                             <span class="box-content">
-                                <span class="page2-boxHeading">	
-                                    500+
-                                </span>
+                                <span class="page2-boxHeading">Strategy & Planning</span>
                                 <p>
-                                    Successfully completed cases
+                                    A business strategy is the means by which it sets out to
+                                    achieve its desired ends.
                                 </p>
                             </span>
                         </div>
@@ -347,25 +177,12 @@
                                 <i class="fas fa-chalkboard-user icon"></i>
                             </div>
                             <span class="box-content">
-                                <span class="page2-boxHeading">	
-                                    500+
+                                <span class="page2-boxHeading">
+                                    Finance & Restructuring
                                 </span>
                                 <p>
-                                    Successfully completed cases
-                                </p>
-                            </span>
-                        </div>
-
-                        <div class="page2-box">
-                            <div>
-                                <i class="fas fa-chalkboard-user icon"></i>
-                            </div>
-                            <span class="box-content">
-                                <span class="page2-boxHeading">	
-                                    500+
-                                </span>
-                                <p>
-                                    Successfully completed cases
+                                    Restructuring your company could restore its viability and improve its liquidity
+                                    position.
                                 </p>
                             </span>
                         </div>
@@ -376,339 +193,556 @@
                                 <i class="fas fa-chalkboard-user icon"></i>
                             </div>
                             <span class="box-content">
-                                <span class="page2-boxHeading">	
-                                    500+
+                                <span class="page2-boxHeading">
+                                    Estate Planning
                                 </span>
                                 <p>
-                                    Successfully completed cases
+                                    Restructuring your company could restore its viability and improve its liquidity
+                                    position.
                                 </p>
                             </span>
                         </div>
+
                     </div>
 
-                </div>
+                    <hr>
 
-                
-                <!-- 2nd Item -->
+                    <!-- item-2 -->
 
-                <div class="page3-conainer2-box">
-                    
-                    <div class="page3-container2-sno">02.</div>
-                    <div class="page3-container2-box-heading">
-                        <h1>Testimonials</h1>
-                        <p>Read client consulting reviews for our company.</p>
-                    </div>
-
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="https://consulting.vamtam.com/wp-content/uploads/2016/04/people-3-small.jpg" alt="image1">
-                            <span class="imageContent">
-                                “Be the change that you wish to see in the world.”
+                    <div class="page2-container-item">
+                        <div class="page2-box">
+                            <div>
+                                <i class="fas fa-chalkboard-user icon"></i>
+                            </div>
+                            <span class="box-content">
+                                <span class="page2-boxHeading">
+                                    Audit & Evaluation
+                                </span>
+                                <p>
+                                    If you have been selected for a business audit, here is what you need to know.
+                                </p>
                             </span>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="https://consulting.vamtam.com/wp-content/uploads/2016/04/people-1-small.jpg" alt="image2">
-                            <span class="imageContent">
-                                “Be the change that you wish to see in the world.”
+                        </div>
+
+                        <div class="page2-box">
+                            <div>
+                                <i class="fas fa-chalkboard-user icon"></i>
+                            </div>
+                            <span class="box-content">
+                                <span class="page2-boxHeading">
+                                    Taxes & Efficiency
+                                </span>
+                                <p>
+                                    Company income subject to tax is often determined much like taxable income for
+                                    individual taxpayers.
+                                </p>
                             </span>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="https://consulting.vamtam.com/wp-content/uploads/2016/04/people-4-350x350.jpg" alt="image3">
-                            <span class="imageContent">
-                                “Be the change that you wish to see in the world.”
+                        </div>
+
+
+                        <div class="page2-box">
+                            <div>
+                                <i class="fas fa-chalkboard-user icon"></i>
+                            </div>
+                            <span class="box-content">
+                                <span class="page2-boxHeading">
+                                    Consumer Markets
+                                </span>
+                                <p>
+                                    A business strategy is the means by which it sets out to achieve its desired ends.
+                                </p>
                             </span>
-                          </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>     
-        
-                </div>
 
-
-                <!-- item3 -->
-
-                <div class="page3-conainer2-box">
-                    
-                    <div class="page3-container2-sno">03.</div>
-                    <div class="page3-container2-box-heading">
-                        <h1>Clients</h1>
-                        <p>We work for a wide variety of clients in both the private and public sectors.</p>
                     </div>
 
+                    <hr>
 
-                    <div class="game-board">
-                        <div class="box">200px x 200px</div>
-                        <div class="box">200px x 200px</div>
-                        <div class="box">200px x 200px</div>
-                        <div class="box">200px x 200px</div>
-                        <div class="box">200px x 200px</div>
-                        <div class="box">200px x 200px</div>
-                        <div class="box">200px x 200px</div>
-                        <div class="box">200px x 200px</div>
-                        <div class="box">200px x 200px</div>
-                    </div>
+                    <!-- item-3 -->
 
-                </div>
-            </div>
-        </div>
-
-
-     <!-- Page4 -->
-
-     <div class="page4" id="insights">
-        <div class="page4-container1">
-            <div class="page4-container1-heading">
-                <h1>Request a Free Call Back</h1>
-                <p>All consultants are able to give you a free call back at any time.</p>
-            </div>
-            <form action="#" method="get" class="page4-callBackForm">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Phone">
-                <select id="cars" name="cars">
-                    <option value="Finance & Restructuring">Finance & Restructuring</option>
-                    <option value="Strategy & Planning">Strategy & Planning</option>
-                    <option value="Audit & Evaluation">Audit & Evaluation</option>
-                </select>
-                <button type="submit">Send</button>
-            </form>
-            <hr>
-        </div>
-            
-        <div class="page4-container2">
-            <div class="page4-container2-heading">
-                <h1>Insights</h1>
-                <p>Read our views on the things that matter to you. And get to know our people. We make the difference.</p>
-            </div>
-
-            <div class="page4-container2-box">
-
-                <div class="card">
-                    <div class="img">
-                        <img src="https://consulting.vamtam.com/wp-content/uploads/2014/03/photo-17-685x526.jpg" alt="image">
-                    </div>
-                    <div class="page4-container2-box-card-content">
-                        <span class="name">Stock</span>
-                        <h3>US Stocks Are Expensive</h3>
-                        <span class="date">APRIL 12, 2024</span>
-                        <p>Working from home meant we could vary snack and coffee breaks, change our desks or... </p>
-                        <span class="type"> MARKET</span><br>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="img">
-                        <img src="https://consulting.vamtam.com/wp-content/uploads/2014/03/photo-17-685x526.jpg" alt="image">
-                    </div>
-                    <div class="page4-container2-box-card-content">
-                        <span class="name">Stock</span>
-                        <h3>US Stocks Are Expensive</h3>
-                        <span class="date">APRIL 12, 2024</span>
-                        <p>Working from home meant we could vary snack and coffee breaks, change our desks or... </p>
-                        <span class="type"> MARKET</span><br>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="img">
-                        <img src="https://consulting.vamtam.com/wp-content/uploads/2014/03/photo-17-685x526.jpg" alt="image">
-                    </div>
-                    <div class="page4-container2-box-card-content">
-                        <span class="name">Stock</span>
-                        <h3>US Stocks Are Expensive</h3>
-                        <span class="date">APRIL 12, 2024</span>
-                        <p>Working from home meant we could vary snack and coffee breaks, change our desks or... </p>
-                        <span class="type"> MARKET</span><br>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-
-
-
-                <div class="card">
-                    <div class="img">
-                        <img src="https://consulting.vamtam.com/wp-content/uploads/2014/03/photo-17-685x526.jpg" alt="image">
-                    </div>
-                    <div class="page4-container2-box-card-content">
-                        <span class="name">Stock</span>
-                        <h3>US Stocks Are Expensive</h3>
-                        <span class="date">APRIL 12, 2024</span>
-                        <p>Working from home meant we could vary snack and coffee breaks, change our desks or... </p>
-                        <span class="type"> MARKET</span><br>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                
-
-            </div>
-            
-
-        </div>
-
-    </div>
-
-        <!-- page5 -->
-
-        <div class="page5" id="pages">
-            <div class="page5-container">
-                <div class="page5-container-box">
-                    <i class="fa-solid fa-map-location-dot icon"></i>
-                    <h2>Our Offices</h2>
-                    <p>
-                        View our locations around the world and find contact details for your nearest office.
-                    </p>
-                    <a href="">Locate the Nearest Office</a>
-                </div>
-
-                <div class="page5-container-box">
-                    <i class="fa-regular fa-envelope-open"></i>
-                    <h2>Drop a Line</h2>
-                    <p>
-                        You may contact us by filling in this form any time you need professional support.
-                    </p>
-                    <a href="">Fill Our Form</a>
-                </div>
-
-                <div class="page5-container-box">
-                    <i class="fa-solid fa-people-group"></i>
-                    <h2>Careers</h2>
-                    <p>
-                        Join the world's largest consulting organization with a unique position .
-                    </p>
-                    <a href="">See Open Positions</a>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <footer class="footer-section">
-
-        <div class="container" id="contact">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                    <div class="page2-container-item">
+                        <div class="page2-box">
+                            <div>
+                                <i class="fas fa-chalkboard-user icon"></i>
                             </div>
+                            <span class="box-content">
+                                <span class="page2-boxHeading">
+                                    Insurance
+                                </span>
+                                <p>
+                                    A business strategy is the means by which it sets out to achieve its desired ends.
+                                </p>
+                            </span>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>9876543210 0</span>
+
+                        <div class="page2-box">
+                            <div>
+                                <i class="fas fa-chalkboard-user icon"></i>
                             </div>
+                            <span class="box-content">
+                                <span class="page2-boxHeading">
+                                    Communications
+                                </span>
+                                <p>
+                                    A business strategy is the means by which it sets out to achieve its desired ends.
+                                </p>
+                            </span>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>mail@info.com</span>
+
+
+                        <div class="page2-box">
+                            <div>
+                                <i class="fas fa-chalkboard-user icon"></i>
                             </div>
+                            <span class="box-content">
+                                <span class="page2-boxHeading">
+                                    Financial Services
+                                </span>
+                                <p>
+                                    A business strategy is the means by which it sets out to achieve its desired ends.
+                                </p>
+                            </span>
                         </div>
+
                     </div>
                 </div>
             </div>
-            <div class="footer-content pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
-                            </div>
-                            <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                    <button><i class="fab fa-telegram-plane"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </footer>
+
+            <!-- page-3 -->
+
+            <div class="page3" id="casestudies">
+
+                <div class="page3-container1">
+                    <div class="page3-conainer1-box">
+                        <span class="page3-container1-box-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </span>
+                        <span class="page3-container1-box-heading">Why choose us?</span>
+                        <span class="page3-container1-box-text">
+                            We innovate systematically, continuously and successfully.
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="page3-container2">
+
+                    <!-- 1st Item -->
+
+                    <div class="page3-conainer2-box">
+
+                        <div class="page3-container2-sno">01.</div>
+                        <div class="page3-container2-box-heading">
+                            <h1>Let the numbers speak!</h1>
+                            <p>With enough data, the numbers speak for themselves.</p>
+                        </div>
+
+                        <div class="page3-container2-content">
+                            <div class="page2-box">
+                                <div>
+                                    <i class="fas fa-chalkboard-user icon"></i>
+                                </div>
+                                <span class="box-content">
+                                    <span class="page2-boxHeading">
+                                        500+
+                                    </span>
+                                    <p>
+                                        Successfully completed cases
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div class="page2-box">
+                                <div>
+                                    <i class="fas fa-chalkboard-user icon"></i>
+                                </div>
+                                <span class="box-content">
+                                    <span class="page2-boxHeading">
+                                        500+
+                                    </span>
+                                    <p>
+                                        Successfully completed cases
+                                    </p>
+                                </span>
+                            </div>
+
+                            <div class="page2-box">
+                                <div>
+                                    <i class="fas fa-chalkboard-user icon"></i>
+                                </div>
+                                <span class="box-content">
+                                    <span class="page2-boxHeading">
+                                        500+
+                                    </span>
+                                    <p>
+                                        Successfully completed cases
+                                    </p>
+                                </span>
+                            </div>
+
+
+                            <div class="page2-box">
+                                <div>
+                                    <i class="fas fa-chalkboard-user icon"></i>
+                                </div>
+                                <span class="box-content">
+                                    <span class="page2-boxHeading">
+                                        500+
+                                    </span>
+                                    <p>
+                                        Successfully completed cases
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- 2nd Item -->
+
+                    <div class="page3-conainer2-box">
+
+                        <div class="page3-container2-sno">02.</div>
+                        <div class="page3-container2-box-heading">
+                            <h1>Testimonials</h1>
+                            <p>Read client consulting reviews for our company.</p>
+                        </div>
+
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://consulting.vamtam.com/wp-content/uploads/2016/04/people-3-small.jpg"
+                                        alt="image1">
+                                    <span class="imageContent">
+                                        “Be the change that you wish to see in the world.”
+                                    </span>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://consulting.vamtam.com/wp-content/uploads/2016/04/people-1-small.jpg"
+                                        alt="image2">
+                                    <span class="imageContent">
+                                        “Be the change that you wish to see in the world.”
+                                    </span>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://consulting.vamtam.com/wp-content/uploads/2016/04/people-4-350x350.jpg"
+                                        alt="image3">
+                                    <span class="imageContent">
+                                        “Be the change that you wish to see in the world.”
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                    <!-- item3 -->
+
+                    <div class="page3-conainer2-box">
+
+                        <div class="page3-container2-sno">03.</div>
+                        <div class="page3-container2-box-heading">
+                            <h1>Clients</h1>
+                            <p>We work for a wide variety of clients in both the private and public sectors.</p>
+                        </div>
+
+
+                        <div class="game-board">
+                            <div class="box">200px x 200px</div>
+                            <div class="box">200px x 200px</div>
+                            <div class="box">200px x 200px</div>
+                            <div class="box">200px x 200px</div>
+                            <div class="box">200px x 200px</div>
+                            <div class="box">200px x 200px</div>
+                            <div class="box">200px x 200px</div>
+                            <div class="box">200px x 200px</div>
+                            <div class="box">200px x 200px</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Page4 -->
+
+            <div class="page4" id="insights">
+                <div class="page4-container1">
+                    <div class="page4-container1-heading">
+                        <h1>Request a Free Call Back</h1>
+                        <p>All consultants are able to give you a free call back at any time.</p>
+                    </div>
+                    <form action="#" method="get" class="page4-callBackForm">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Phone">
+                        <select id="cars" name="cars">
+                            <option value="Finance & Restructuring">Finance & Restructuring</option>
+                            <option value="Strategy & Planning">Strategy & Planning</option>
+                            <option value="Audit & Evaluation">Audit & Evaluation</option>
+                        </select>
+                        <button type="submit">Send</button>
+                    </form>
+                    <hr>
+                </div>
+
+                <div class="page4-container2">
+                    <div class="page4-container2-heading">
+                        <h1>Insights</h1>
+                        <p>Read our views on the things that matter to you. And get to know our people. We make the
+                            difference.</p>
+                    </div>
+
+                    <div class="page4-container2-box">
+
+                        <div class="card">
+                            <div class="img">
+                                <img src="https://consulting.vamtam.com/wp-content/uploads/2014/03/photo-17-685x526.jpg"
+                                    alt="image">
+                            </div>
+                            <div class="page4-container2-box-card-content">
+                                <span class="name">Stock</span>
+                                <h3>US Stocks Are Expensive</h3>
+                                <span class="date">APRIL 12, 2024</span>
+                                <p>Working from home meant we could vary snack and coffee breaks, change our desks or...
+                                </p>
+                                <span class="type"> MARKET</span><br>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="img">
+                                <img src="https://consulting.vamtam.com/wp-content/uploads/2014/03/photo-17-685x526.jpg"
+                                    alt="image">
+                            </div>
+                            <div class="page4-container2-box-card-content">
+                                <span class="name">Stock</span>
+                                <h3>US Stocks Are Expensive</h3>
+                                <span class="date">APRIL 12, 2024</span>
+                                <p>Working from home meant we could vary snack and coffee breaks, change our desks or...
+                                </p>
+                                <span class="type"> MARKET</span><br>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="img">
+                                <img src="https://consulting.vamtam.com/wp-content/uploads/2014/03/photo-17-685x526.jpg"
+                                    alt="image">
+                            </div>
+                            <div class="page4-container2-box-card-content">
+                                <span class="name">Stock</span>
+                                <h3>US Stocks Are Expensive</h3>
+                                <span class="date">APRIL 12, 2024</span>
+                                <p>Working from home meant we could vary snack and coffee breaks, change our desks or...
+                                </p>
+                                <span class="type"> MARKET</span><br>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card">
+                            <div class="img">
+                                <img src="https://consulting.vamtam.com/wp-content/uploads/2014/03/photo-17-685x526.jpg"
+                                    alt="image">
+                            </div>
+                            <div class="page4-container2-box-card-content">
+                                <span class="name">Stock</span>
+                                <h3>US Stocks Are Expensive</h3>
+                                <span class="date">APRIL 12, 2024</span>
+                                <p>Working from home meant we could vary snack and coffee breaks, change our desks or...
+                                </p>
+                                <span class="type"> MARKET</span><br>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- page5 -->
+
+            <div class="page5" id="pages">
+
+                <div class="page5-container">
+                    <div class="page5-container-box">
+                        <i class="fa-solid fa-map-location-dot icon"></i>
+                        <h2>Our Offices</h2>
+                        <p>
+                            View our locations around the world and find contact details for your nearest office.
+                        </p>
+                        <a href="">Locate the Nearest Office</a>
+                    </div>
+
+                    <div class="page5-container-box">
+                        <i class="fa-regular fa-envelope-open"></i>
+                        <h2>Drop a Line</h2>
+                        <p>
+                            You may contact us by filling in this form any time you need professional support.
+                        </p>
+                        <a href="">Fill Our Form</a>
+                    </div>
+
+                    <div class="page5-container-box">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h2>Careers</h2>
+                        <p>
+                            Join the world's largest consulting organization with a unique position .
+                        </p>
+                        <a href="">See Open Positions</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <button id="chat"><i class="fa-regular fa-message"></i></button>
+
+        <footer class="footer-section">
+
+            <div class="container" id="contact">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>1010 Avenue, sw 54321, chandigarh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>9876543210 0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>mail@info.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png"
+                                            class="img-fluid" alt="logo"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                        incididuntut consec tetur adipisicing
+                                        elit,Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">services</a></li>
+                                    <li><a href="#">portfolio</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Expert Team</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Latest News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2018, All Right Reserved <a
+                                        href="https://codepen.io/anupkumar92/">Anup</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
         <script src="script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/40a41ef56d.js" crossorigin="anonymous"></script>
-</body>
+    </body>
+
 </html>

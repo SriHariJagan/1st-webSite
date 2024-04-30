@@ -650,7 +650,7 @@
 
 .page4{
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 50px 0;
 }
 
@@ -895,6 +895,33 @@
 
     a:hover{
         color: rgb(184, 137, 68);
+    }
+}
+
+
+/*------- chat icon --------*/
+
+#chat{
+    padding: 6px 10px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 50%;
+    /* z-index: 200; */
+
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+    border: none;
+    box-shadow: 0 0 5px .5px black;
+    background-color: rgba(172, 255, 47, 0.603);
+    /* color: white; */
+}
+
+@media (max-width: 800px){
+    #chat{
+        bottom: 25px;
+        right: 20px;
     }
 }
 
