@@ -7,6 +7,11 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --scrollbar: #e6e6e6;
+    --scrollthumb: #7c7c7c;
+}
+
 
 /* navbar regular css start */
 .navlinks {
@@ -255,9 +260,10 @@
   /*--------- page1 ---------*/
 
   .page1{
+    margin: auto;
     width: 100%;
-    /* min-height: 80vh; */
-    padding: 20px 5px;
+    padding: 20px 5px 50px 5px;
+    /* background-color: #E3FEF7; */
 }
 
 .page1-heading{
@@ -272,28 +278,51 @@
 }
 
 .page1-container{
-    min-height: 300px;
+    margin: auto;
+    width: 90%;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding-bottom: 50px;
-}
-
-.page1-box{
-    width: 300px;
-    height: 250px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px 15px;
+    background-color: #77B0AA;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0 0 25px 2px #77b0aaab;
+}
+
+.page1-box{
+    margin: 5px 50px;
+    width: 300px;
+    height: 250px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     margin-right: 10px;
     background-image: url('https://consulting.vamtam.com/wp-content/uploads/2017/08/shape-bg.svg');
+    background-color: #d9f3f7e8;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: 0.4s;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+
+    font-weight: 500;
+
 }
+
+.page1-box:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 0px 0px 10px 1px rgba(248, 93, 93, 0.815);
+}
+
 
 .page1-box-icon{
     font-size: 3.5rem;
@@ -311,6 +340,19 @@
 }
 
 
+.page1-container::-webkit-scrollbar{
+    height: 2px;
+    width: 0;
+    border-radius: 50px;
+    background-color: var(--scrollbar);
+}
+
+.page1-container::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: var(--scrollthumb);
+}
+
+
 @media (max-width: 575.98px) {
     .page1-heading span {
         font-size: 1.5rem;
@@ -319,13 +361,14 @@
 
 
 
+ 
   /*======= Page2 =======*/
 
   .page2{
     width: 100%;
-    /* min-height: 100vh; */
-    padding: 10px 0 60px 0;
-    background-color: #ECF4FE;
+    padding: 30px 0 100px 0;
+    /* background-color: #254481; */
+
 }
 
 .page2-heading{
@@ -334,84 +377,72 @@
     width: 75%;
     text-align: center;
     font-size: 3rem;
+    font-weight: 600;
     font-family: sans-serif;
+    color: #295780;
 }
 
 .page2-container{
-    width: 95%;
-    min-height: 600px;
+    width: 85%;
     margin: auto;
-    background-color: white;
-    padding: 20px 10px;
+    background-color: #16316afb;
+    border-radius: 10px;
+    padding: 50px 10px;
 
-}
-
-.page2-container-item{
-    /* background-color: #ECF4FE; */
-    width: 99%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    gap: 65px;
-    padding-bottom: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    color: white;
+
+    box-shadow: 0 0 20px .5px black;
 }
 
 .page2-box{
-    width: 360px;
-    height: 150px;
+    width: 110px;
+    height: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 28px;
-    padding-top: 10px;
+    flex-wrap: wrap;
+    padding: 5px;
     /* background-color: cadetblue; */
 }
 
+.icon-box{
+    width: 85%;
+    height: 75px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #00000098;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .icon{
-    font-size: 3rem;
-    color: #072cff;
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #e4e4e4;
 }
 
 .page2-boxHeading{
-    padding-top: 5px;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.page2-box p{
-    padding-top: 10px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
 }
 
 
-
-@media (max-width : 900px){
-    .page2-container-item{
-        gap: 10px;
-    }
-    .page2-box{
-        padding: 5px;
-        width: 325px;
-        .page2-boxHeading{
-            font-size: 1.2rem;
-        }
-    }
-}
 
 @media (max-width : 700px){
-    .page2-container-item{
-        gap: 0px;
-        
-    }
-    .page2-box{
-        /* background-color: azure; */
-        margin-bottom: 15px;
-        /* padding: 10px; */
-        /* gap: 20px; */
-        width: 100%;
-        .page2-boxHeading{
-            font-size: 1rem;
-        }
+    .page2-container{
+        row-gap: 25px;
+        column-gap: 5px;
     }
 }
 
@@ -479,7 +510,7 @@
     padding: 20px 0;
     min-height: 120vh;
     width: 60%;
-    /* background-color: aquamarine; */
+    background-color: #7fffd423;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -502,6 +533,27 @@
     font-size: 3rem;
     font-family: sans-serif;
     color: #D9D9D9;
+}
+
+.page3-container2-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.page3-box{
+    margin: 10px;
+
+    .page3-box-icon{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .box-content{
+        display: inline-block;
+        text-align: center;
+    }
+
 }
 
 .page3-container2-box-heading{
@@ -799,9 +851,19 @@
     }
 }
 
-::-webkit-scrollbar,::-webkit-scrollbar-track{
+
+/* -----------scroll bar----------- */
+
+.page4-container2-box::-webkit-scrollbar{
+    height: 5px;
     width: 0;
-    height: 0;
+    border-radius: 50px;
+    background-color: var(--scrollbar);
+}
+
+.page4-container2-box::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: var(--scrollthumb);
 }
 
 
@@ -915,7 +977,7 @@
     border: none;
     box-shadow: 0 0 5px .5px black;
     background-color: rgba(172, 255, 47, 0.603);
-    /* color: white; */
+    margin: auto;
 }
 
 @media (max-width: 800px){
